@@ -1,0 +1,50 @@
+.parallax-bg {
+    position: relative;
+    /* Remove background-image and other parallax related properties */
+  }
+  
+  .parallax-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/fitness-park.jpeg'); /* Specify the background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply a blur effect */
+    z-index: -1; /* Ensure the blur layer is behind other content */
+  }
+  
+  
+  /* Homepage styles */
+.parallax-bg {
+    background-color: yellow; /* Set background color */
+  }
+  
+  .parallax-bg h1 {
+    color: rgb(253, 253, 253); /* Set h1 color to black */
+    font-family: Arial, sans-serif; /* Set font family for h1 */
+  }
+  
+  .parallax-bg p:first-of-type {
+    color: white; /* Set color for the first p element to white */
+    font-family: 'Roboto', sans-serif; /* Set font family for p */
+    font-weight: bold; /* Make font weight bold */
+  }
+  
+  .parallax-bg .card {
+    background-color: black; /* Set card background color to black */
+    color: yellow; /* Set card text color to yellow */
+  }
+  
+  .parallax-bg .bg-primary {
+    background-color: yellow !important; /* Set background color to yellow for bg-primary class */
+    color: black !important; /* Set text color to black for bg-primary class */
+  }
+  
+  .parallax-bg .card-body {
+    font-family: Arial, sans-serif; /* Set font family for card body */
+  }
+  
